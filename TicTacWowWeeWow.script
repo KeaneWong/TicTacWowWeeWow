@@ -1,0 +1,194 @@
+Script started on Sat 13 Mar 2021 02:36:52 PM PST
+]0;keanedw@crystalcove:hw5[keanedw@crystalcove hw5]$ makec[K clean
+rm -f *.o
+rm -f TicTacWowWeeWow
+rm -f *.a
+]0;keanedw@crystalcove:hw5[keanedw@crystalcove hw5]$ make all
+gcc -Wall -ansi -std=c99 -c GameBoard.c -o GameBoard.o
+gcc -Wall -ansi -std=c99 -c GameAI.c -o GameAI.o
+gcc -Wall -ansi -std=c99 -c Settings.c -o Settings.o
+ar rcs libGameFunctions.a GameBoard.o GameAI.o Settings.o
+gcc -Wall -ansi -std=c99 -c TicTacWowWeeWow.c -o TicTacWowWeeWow.o
+gcc -Wall  TicTacWowWeeWow.o -o TicTacWowWeeWow -L. -lGameFunctions
+]0;keanedw@crystalcove:hw5[keanedw@crystalcove hw5]$ make allclean[28Gexit[Kvalgrind --leak-check=full ./TicTacWowWeeWow[29Gi TicTacWowWeeWow.c[K[29Galgrind --leak-check=full ./TicTacWowWeeWow
+==28623== Memcheck, a memory error detector
+==28623== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==28623== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==28623== Command: ./TicTacWowWeeWow
+==28623== 
+Welcome to TicTacWhoa. To begin, please enter a valid option from below:
+1. Start a new game (Human vs Human)
+2. Start a new game (Human vs Robot)
+3. Game settings
+4. Exit game
+Enter code:3
+Welcome to game settings.
+Current Settings:
+	Player 1: X
+	Player 2: O
+	BoardSize: 3
+Which setting would you like to change?
+	1. Change player 1 color
+	2.Change player 2 color
+	3.Change player icons
+	5.Quit
+1
+	1.Black
+	2.Red
+	3.Green
+	4.Yellow
+	5.Blue
+	6.Magenta
+	7.Cyan
+	8.White
+	9.Reset
+Choose from the options below (Enter 1-9):
+2
+Welcome to TicTacWhoa. To begin, please enter a valid option from below:
+1. Start a new game (Human vs Human)
+2. Start a new game (Human vs Robot)
+3. Game settings
+4. Exit game
+Enter code:3
+Welcome to game settings.
+Current Settings:
+	Player 1: X
+	Player 2: O
+	BoardSize: 3
+Which setting would you like to change?
+	1. Change player 1 color
+	2.Change player 2 color
+	3.Change player icons
+	5.Quit
+3
+Which player's icon do you want changed?
+2
+What do you want the new icon to be?
+E
+Icon changed to E
+Changing new icon to be E
+Welcome to TicTacWhoa. To begin, please enter a valid option from below:
+1. Start a new game (Human vs Human)
+2. Start a new game (Human vs Robot)
+3. Game settings
+4. Exit game
+Enter code:2
+1.Inky
+2.Blinky
+3.Pinky
+4.Clyde (Incomplete)
+Which AI version would you like to face off against?
+3
+Would you like to be player 1 or player 2? (1/2)
+2
+C [0m [0m|[0m [0m|[0m [0m
+  -----
+B [0m [0m|[0m [0m|[0m [0m
+  -----
+A [0m [0m|[0m [0m|[0m [0m
+  1 2 3 
+ICON IS E
+Using random
+Adding move 1 2
+0 turns
+C [0m [0m|[0m [0m|[0m [0m
+  -----
+B [0m [0m|[0m [0m|[31mX[0m
+  -----
+A [31m [0m|[31m [0m|[31m [0m
+  1 2 3 
+Player human make your move ('zz' to undo): A1
+C [0m [0m|[0m [0m|[0m [0m
+  -----
+B [0m [0m|[0m [0m|[31mX[0m
+  -----
+A [0mE[0m|[0m [0m|[0m [0m
+  1 2 3 
+ICON IS E
+Using random
+Adding move 2 0
+C [31mX[0m|[31m [0m|[31m [0m
+  -----
+B [31m [0m|[31m [0m|[31mX[0m
+  -----
+A [0mE[0m|[0m [0m|[0m [0m
+  1 2 3 
+Player human make your move ('zz' to undo): B2
+C [31mX[0m|[31m [0m|[31m [0m
+  -----
+B [31m [0m|[0mE[0m|[31mX[0m
+  -----
+A [0mE[0m|[0m [0m|[0m [0m
+  1 2 3 
+ICON IS E
+Adding move 2 2
+C [31mX[0m|[31m [0m|[31mX[0m
+  -----
+B [31m [0m|[0mE[0m|[31mX[0m
+  -----
+A [0mE[0m|[0m [0m|[0m [0m
+  1 2 3 
+Player human make your move ('zz' to undo): C2
+C [31mX[0m|[0mE[0m|[31mX[0m
+  -----
+B [31m [0m|[0mE[0m|[31mX[0m
+  -----
+A [0mE[0m|[0m [0m|[0m [0m
+  1 2 3 
+ICON IS E
+Adding move 0 1
+C [31mX[0m|[0mE[0m|[31mX[0m
+  -----
+B [31m [0m|[0mE[0m|[31mX[0m
+  -----
+A [0mE[0m|[31mX[0m|[31m [0m
+  1 2 3 
+Player human make your move ('zz' to undo): C3  A3
+C [31mX[0m|[0mE[0m|[31mX[0m
+  -----
+B [31m [0m|[0mE[0m|[31mX[0m
+  -----
+A [0mE[0m|[31mX[0m|[0mE[0m
+  1 2 3 
+ICON IS E
+Using random
+Adding move 1 0
+Draw. No winners
+C [31mX[0m|[0mE[0m|[31mX[0m
+  -----
+B [31mX[0m|[0mE[0m|[31mX[0m
+  -----
+A [0mE[0m|[31mX[0m|[0mE[0m
+  1 2 3 
+Save replay?(y/n):y
+Enter the name of the save filename (include .txt at end please): 2021    KDW-20   vAI-2021-03-13.txt
+Done2
+Done1
+Done2
+Welcome to TicTacWhoa. To begin, please enter a valid option from below:
+1. Start a new game (Human vs Human)
+2. Start a new game (Human vs Robot)
+3. Game settings
+4. Exit game
+Enter code:4
+Thank you. Have a wonderful day
+==28623== 
+==28623== HEAP SUMMARY:
+==28623==     in use at exit: 568 bytes in 1 blocks
+==28623==   total heap usage: 25 allocs, 24 frees, 3,450 bytes allocated
+==28623== 
+==28623== LEAK SUMMARY:
+==28623==    definitely lost: 0 bytes in 0 blocks
+==28623==    indirectly lost: 0 bytes in 0 blocks
+==28623==      possibly lost: 0 bytes in 0 blocks
+==28623==    still reachable: 568 bytes in 1 blocks
+==28623==         suppressed: 0 bytes in 0 blocks
+==28623== Reachable blocks (those to which a pointer was found) are not shown.
+==28623== To see them, rerun with: --leak-check=full --show-reachable=yes
+==28623== 
+==28623== For counts of detected and suppressed errors, rerun with: -v
+==28623== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)
+]0;keanedw@crystalcove:hw5[keanedw@crystalcove hw5]$ exit
+exit
+
+Script done on Sat 13 Mar 2021 02:38:56 PM PST

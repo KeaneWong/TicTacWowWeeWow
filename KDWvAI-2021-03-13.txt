@@ -1,0 +1,98 @@
+#TicTacWowWeeWow
+Version 1.0
+Filename: KDWvAI-2021-03-13.txt
+Date: 13 03 2021 14:37
+
+#Settings
+Player 1 (Pinky): 'X' 'Red'
+Player 2 (Human): 'E'' 'Default Color'
+#Winner: Draw
+
+#MovesList
+Player 1: B3
+Player 2: A1
+Player 1: C1
+Player 2: B2
+Player 1: C3
+Player 2: C2
+Player 1: A2
+Player 2: A3
+Player 1: B1
+
+
+#Replay 
+Player 1 chooses B 3
+C  | | 
+  -----
+B  | |X
+  -----
+A  | | 
+  1 2 3 
+
+Player 2 chooses A 1
+C  | | 
+  -----
+B  | |X
+  -----
+A E| | 
+  1 2 3 
+
+Player 1 chooses C 1
+C X| | 
+  -----
+B  | |X
+  -----
+A E| | 
+  1 2 3 
+
+Player 2 chooses B 2
+C X| | 
+  -----
+B  |E|X
+  -----
+A E| | 
+  1 2 3 
+
+Player 1 chooses C 3
+C X| |X
+  -----
+B  |E|X
+  -----
+A E| | 
+  1 2 3 
+
+Player 2 chooses C 2
+C X|E|X
+  -----
+B  |E|X
+  -----
+A E| | 
+  1 2 3 
+
+Player 1 chooses A 2
+C X|E|X
+  -----
+B  |E|X
+  -----
+A E|X| 
+  1 2 3 
+
+Player 2 chooses A 3
+C X|E|X
+  -----
+B  |E|X
+  -----
+A E|X|E
+  1 2 3 
+
+Player 1 chooses B 1
+C X|E|X
+  -----
+B X|E|X
+  -----
+A E|X|E
+  1 2 3 
+
+No contest!
+
+#EOF

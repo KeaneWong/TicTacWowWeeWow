@@ -1,0 +1,96 @@
+#TicTacWowWeeWow
+Version 1.0
+Filename: aitest.txt
+Date: 13 03 2021 03:32
+
+#Settings
+Player 1 (Pinky): 'X' 'Default Color'Player 2 (Human): 'O'' 'Default Color'#Winner: Draw
+
+#MovesList
+Player 1: C2
+Player 2: B2
+Player 1: A2
+Player 2: B1
+Player 1: B3
+Player 2: C3
+Player 1: A1
+Player 2: A3
+Player 1: C1
+
+
+#Replay 
+Player 1 chooses C 2
+C  |X| 
+  -----
+B  | | 
+  -----
+A  | | 
+  1 2 3 
+
+Player 2 chooses B 2
+C  |X| 
+  -----
+B  |O| 
+  -----
+A  | | 
+  1 2 3 
+
+Player 1 chooses A 2
+C  |X| 
+  -----
+B  |O| 
+  -----
+A  |X| 
+  1 2 3 
+
+Player 2 chooses B 1
+C  |X| 
+  -----
+B O|O| 
+  -----
+A  |X| 
+  1 2 3 
+
+Player 1 chooses B 3
+C  |X| 
+  -----
+B O|O|X
+  -----
+A  |X| 
+  1 2 3 
+
+Player 2 chooses C 3
+C  |X|O
+  -----
+B O|O|X
+  -----
+A  |X| 
+  1 2 3 
+
+Player 1 chooses A 1
+C  |X|O
+  -----
+B O|O|X
+  -----
+A X|X| 
+  1 2 3 
+
+Player 2 chooses A 3
+C  |X|O
+  -----
+B O|O|X
+  -----
+A X|X|O
+  1 2 3 
+
+Player 1 chooses C 1
+C X|X|O
+  -----
+B O|O|X
+  -----
+A X|X|O
+  1 2 3 
+
+No contest!
+
+#EOF
